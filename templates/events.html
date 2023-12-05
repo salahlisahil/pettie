@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">in
+    <title>Document</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="events">
+        <div class="mini-info">
+            <div class="mini-info-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="71" height="73" viewBox="0 0 71 73" fill="none">
+                    <path
+                        d="M34.253 36.3565C28.4814 37.601 28.0225 43.1889 23.5205 49.1095C17.061 57.7719 19.471 63.9011 24.3941 64.3588C29.3172 64.8165 32.4173 58.7081 37.6669 58.0662C42.7862 57.093 47.6749 61.8056 52.1101 59.575C56.6104 57.5101 57.0046 50.7926 48.204 44.8163C42.3043 40.9099 40.0569 35.6768 34.253 36.3565Z"
+                        fill="#3A9EFD" />
+                    <path
+                        d="M18.4944 33.9373C22.3649 38.2678 23.6655 43.8723 21.4248 46.4433C19.0289 49.0788 13.9709 47.7005 10.1003 43.37C6.22981 39.0394 4.92928 33.4349 7.16993 30.864C9.56584 28.2284 14.6239 29.6068 18.4944 33.9373Z"
+                        fill="#3A9EFD" />
+                    <path
+                        d="M47.3468 29.1285C44.826 34.2563 45.4299 39.6382 48.5266 41.2636C51.6234 42.889 56.2349 40.1936 58.7557 35.0658C61.2764 29.938 60.6726 24.5561 57.5759 22.9307C54.3167 21.3729 49.7052 24.0683 47.3468 29.1285Z"
+                        fill="#3A9EFD" />
+                    <path
+                        d="M30.0138 20.8317C32.1232 26.6734 30.848 32.4979 27.3924 33.7318C23.9368 34.9657 19.4298 31.1395 17.3204 25.2977C15.211 19.456 16.4862 13.6315 19.9418 12.3976C23.3974 11.1637 27.9044 14.9899 30.0138 20.8317Z"
+                        fill="#3A9EFD" />
+                    <path
+                        d="M33.0744 20.1186C32.9835 25.9256 35.8749 30.4919 39.3602 30.5308C43.0025 30.5044 45.9514 25.9278 46.1052 20.2808C46.1961 14.4738 43.3047 9.90749 39.8194 9.8686C36.2712 9.66977 33.1653 14.3117 33.0744 20.1186Z"
+                        fill="#3A9EFD" />
+                </svg>
+                <span>Event</span>
+            </div>
+            <div class="mini-info-text">
+                <p>Join us for an enlightening information session that delves into the transformative world of
+                    Animal-Assisted Pet Therapy (AAPT). Whether you're curious about the benefits of AAPT or actively
+                    seeking therapy services, this event is designed to provide valuable insights and answer all your
+                    questions.</p>
+            </div>
+            <div class="date-adress">
+                <div class="date">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M21 8.75241V18.0024C21 18.8644 20.6576 19.691 20.0481 20.3005C19.4386 20.91 18.612 21.2524 17.75 21.2524H6.25C5.38805 21.2524 4.5614 20.91 3.9519 20.3005C3.34241 19.691 3 18.8644 3 18.0024V8.75241H21ZM13.995 10.9474C13.331 10.9474 12.804 11.1254 12.413 11.4794C12.023 11.8344 11.827 12.3144 11.827 12.9204C11.827 13.2684 11.916 13.5784 12.093 13.8504C12.271 14.1224 12.513 14.3364 12.818 14.4924C12.4734 14.6384 12.1782 14.8808 11.968 15.1904C11.7661 15.4941 11.6608 15.8518 11.666 16.2164C11.666 16.8384 11.878 17.3324 12.303 17.7004C12.728 18.0684 13.293 18.2524 14 18.2524C14.703 18.2524 15.266 18.0694 15.69 17.7024C16.113 17.3364 16.324 16.8414 16.324 16.2164C16.324 15.8384 16.224 15.5004 16.024 15.2004C15.8098 14.8893 15.513 14.6441 15.167 14.4924C15.477 14.3364 15.72 14.1224 15.899 13.8504C16.079 13.5784 16.168 13.2684 16.168 12.9204C16.168 12.3154 15.973 11.8344 15.582 11.4804C15.192 11.1254 14.662 10.9474 13.995 10.9474ZM10.22 11.0214H10.068L7.295 12.0414V13.0424L9.038 12.4464V18.1544H10.22V11.0224V11.0214ZM13.99 14.9814C14.335 14.9814 14.613 15.0894 14.823 15.3054C15.033 15.5224 15.138 15.8054 15.138 16.1574C15.138 16.5194 15.038 16.8004 14.838 17.0024C14.638 17.2044 14.358 17.3054 14 17.3054C13.642 17.3054 13.361 17.2014 13.158 16.9924C12.954 16.7844 12.852 16.5064 12.852 16.1574C12.852 15.8034 12.956 15.5174 13.162 15.3034C13.369 15.0884 13.645 14.9814 13.99 14.9814ZM13.995 11.9004C14.298 11.9004 14.539 12.0004 14.718 12.2004C14.897 12.4004 14.986 12.6554 14.986 12.9644C14.986 13.2894 14.898 13.5484 14.72 13.7404C14.543 13.9324 14.303 14.0284 14 14.0284C13.697 14.0284 13.457 13.9324 13.28 13.7404C13.102 13.5484 13.014 13.2904 13.014 12.9644C13.014 12.6354 13.102 12.3764 13.277 12.1854C13.453 11.9954 13.692 11.9004 13.995 11.9004ZM17.75 3.25241C18.612 3.25241 19.4386 3.59482 20.0481 4.20431C20.6576 4.81381 21 5.64046 21 6.50241V7.25241H3V6.50241C3 5.64046 3.34241 4.81381 3.9519 4.20431C4.5614 3.59482 5.38805 3.25241 6.25 3.25241H17.75Z"
+                            fill="#3A9EFD" />
+                    </svg>
+                    <span>Date and Time: 15.01.2024 at 18:00</span>
+                </div>
+                <div class="adress">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path
+                            d="M17.8814 13.5349C18.4809 12.4091 18.7935 11.1529 18.7917 9.87741C18.7917 5.57412 15.3033 2.08574 11 2.08574C6.6967 2.08574 3.20832 5.57412 3.20832 9.87741C3.20517 11.7155 3.85489 13.4949 5.04166 14.8985L5.05082 14.9099C5.05403 14.9127 5.05678 14.9163 5.05907 14.9191H5.04166L9.66532 19.8278C9.83672 20.0098 10.0435 20.1547 10.273 20.2538C10.5025 20.3529 10.7498 20.404 10.9998 20.404C11.2497 20.404 11.497 20.3529 11.7265 20.2538C11.956 20.1547 12.1628 20.0098 12.3342 19.8278L16.9583 14.9191H16.9409L16.9482 14.9104L16.9492 14.9095C16.9822 14.87 17.0152 14.8306 17.0477 14.7903C17.3656 14.3996 17.645 13.979 17.8819 13.5345L17.8814 13.5349ZM11.0018 12.8566C10.2725 12.8566 9.57301 12.5668 9.05728 12.0511C8.54156 11.5354 8.25182 10.8359 8.25182 10.1066C8.25182 9.37723 8.54156 8.67776 9.05728 8.16203C9.57301 7.64631 10.2725 7.35658 11.0018 7.35658C11.7312 7.35658 12.4306 7.64631 12.9464 8.16203C13.4621 8.67776 13.7518 9.37723 13.7518 10.1066C13.7518 10.8359 13.4621 11.5354 12.9464 12.0511C12.4306 12.5668 11.7312 12.8566 11.0018 12.8566Z"
+                            fill="#3A9EFD" />
+                    </svg>
+                    <span>Location: Via Giorgio Zoega 59, 00164 Rome Italy</span>
+                </div>
+            </div>
+        </div>
+        <div class="large-info">
+            <div class="large-title">
+                <span>AGENDA</span>
+            </div>
+            <div class="large-list">
+                <li>Explore the profound impact of AAPT on emotional, physical, and psychological well-being.</li>
+                <li>Understand the science behind the therapeutic bond between humans and animals.</li>
+                <li>Meet the Therapy Animals:</li>
+                <li>Interact with certified therapy animals and their handlers.</li>
+                <li>Learn about the unique qualities and specializations of each therapy dog.</li>
+                <li>Navigating the AAPT Platform:</li>
+                <li>Live demonstration of our user-friendly website.</li>
+                <li>Discover how to find and book AAPT sessions tailored to your needs.</li>
+                <li>Q&A Session:</li>
+                <li>Engage with experienced therapists, handlers, and AAPT experts.</li>
+                <li>Get personalized answers to your questions about AAPT services.</li>
+            </div>
+            <div class="large-text">
+                <div>
+                    <p>Don't miss this opportunity to embark on a journey of healing and well-being with Animal-Assisted
+                        Pet Therapy. Whether you're a potential client, a therapist, or simply curious, this info
+                        session is your gateway to a world where the power of the human-animal bond takes center stage.
+                        Register now for an informative and uplifting experience!</p>
+                </div>
+                <div class="large-img">
+                    <img src="/static/imgs/smiley-dog.png" alt="" height="350">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "contact.html" %}
+
+</body>
+
+</html>

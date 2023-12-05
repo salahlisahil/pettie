@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="about">
+        <div class="about-title">
+            <img src="/static/imgs/pngwing_3.png" alt="" width="352" height="196">
+            <div class="about-name">
+                <img src="/static/imgs/Group.svg" alt="">
+                <span>About Us</span>
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="info-all">
+                <div>
+                    <img src="/static/imgs/Group1.svg" alt="" width="21" height="19">
+                    <p>Our company is dedicated to addressing the pressing need for accessible and streamlined
+                        Animal-Assisted Pet Therapy (AAPT) services, as highlighted in the problem statement. We are
+                        committed to creating a comprehensive platform that connects individuals with certified therapy
+                        animals and professionals, revolutionizing the way people access and benefit from AAPT.</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="/static/imgs/kitten 1.png" alt="" height="420" width="500" class="big-img">
+                    </div>
+                    <div>
+                        <img src="/static/imgs/Group1.svg" alt="" width="21" height="19">
+                        <p>To tackle the lack of centralized platforms and standardized processes for accessing AAPT
+                            services, we will develop a user-friendly and intuitive web site. This web site will serve
+                            as a one-stop solution for individuals seeking AAPT, making it easy to find and book therapy
+                            sessions based on their specific needs and preferences.
+                            To address the challenge of identifying qualified therapy animals and professionals, our
+                            platform will maintain a robust and up-to-date database. This database will include detailed
+                            profiles of certified therapy animals and their handlers in the AAPT field. Users can browse
+                            these profiles, review qualifications, and select the most suitable service for their
+                            requirements.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="/static/imgs/Group1.svg" alt="" width="21" height="19">
+                        <p>Transparency in cost and reimbursement options is a fundamental aspect of our solution. Our
+                            web site will provide clear and transparent pricing information for AAPT sessions, ensuring
+                            that users have a comprehensive understanding of the financial aspects. Additionally, we
+                            will collaborate with insurance providers to facilitate reimbursement for AAPT services
+                            where applicable, reducing financial barriers for individuals seeking therapy.
+                            Our company's solution is to develop a user-centric web site that centralizes and simplifies
+                            the process of accessing Animal-Assisted Pet Therapy services. By providing a comprehensive
+                            platform, transparent information, and expanding access to AAPT, we aim to empower
+                            individuals to harness the benefits of AAPT, improving their emotional, physical, and
+                            psychological well-being.</p>
+                    </div>
+                    <div>
+                        <img src="/static/imgs/clinic.png" alt="" height="500" width="520" class="big-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-info">
+                <div class="extra-btns">
+                    <button onclick="btnOne()" class="oneBtn active">
+                        <img src="/static/imgs/Group.svg" alt="" width="30px" height="32px">
+                        Mission Statement
+                    </button>
+                    <button onclick="btnTwo()" class="twoBtn">
+                        <img src="/static/imgs/Group.svg" alt="" width="30px" height="32px">
+                        Vision Statement
+                    </button>
+                    <button onclick="btnThree()" class="threeBtn">
+                        <img src="/static/imgs/Group.svg" alt="" width="30px" height="32px">
+                        Value Proposition
+                    </button>
+                </div>
+                <div class="extra-text">
+                    <p class="text-one">Empowering individuals to enhance their well-being through Animal-Assisted Pet
+                        Therapy (AAPT), our mission is to provide a user-centric platform that centralizes and
+                        simplifies access to certified therapy animals and professionals. We are dedicated to
+                        revolutionizing the AAPT landscape, addressing the pressing need for streamlined services and
+                        fostering emotional, physical, and psychological healing.</p>
+                    <p class="text-two">We envision a world where anyone seeking the transformative benefits of
+                        Animal-Assisted Pet Therapy can easily connect with certified therapy animals and professionals.
+                        Through our comprehensive platform, we strive to set the standard for accessibility,
+                        transparency, and excellence in AAPT services. Our vision is to be the global leader in
+                        advancing the well-being of individuals through innovative and compassionate animal-assisted
+                        interventions.</p>
+                    <p class="text-three">At our core, we commit to transforming the AAPT experience. Our user-friendly
+                        website serves as a one-stop solution, seamlessly connecting individuals with certified therapy
+                        animals and professionals tailored to their unique needs. By maintaining a robust database of
+                        qualified teams, we ensure transparency and trust in the selection process. Clear and
+                        transparent pricing information, coupled with collaboration with insurance providers, reduces
+                        financial barriers, making AAPT accessible to all. Through our commitment to excellence,
+                        compassion, and innovation, we empower individuals to embark on a journey of well-being with
+                        Animal-Assisted Pet Therapy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "contact.html" %}
+
+    <script src="{% static 'JS/about.js' %}"></script>
+</body>
+
+</html>

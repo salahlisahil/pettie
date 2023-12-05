@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 66px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header img {
+    width: 45px;
+    height: 50px;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo>span {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 33px;
+    color: #FA0;
+    font-weight: 700;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #131313;
+}
+
+nav ul:nth-child(1) li {
+    margin-left: 30px;
+}
+
+nav ul:nth-child(2) li:nth-child(1) {
+    padding: 10px 20px;
+    background-color: #3A9EFD;
+    border-radius: 8px;
+}
+
+nav ul:nth-child(2) a {
+    color: #000;
+}
+
+nav ul:nth-child(2) li:nth-child(2) {
+    margin-left: 5px;
+    padding: 10px;
+}
+
+
+
+.about {
+    width: 100%;
+    padding: 120px 60px;
+}
+
+.about-title {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    padding: 0 0 0 10%;
+}
+
+.about-name {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 0 43px;
+}
+
+.about-name>span {
+    font-size: 48px;
+}
+
+.about-info {
+    width: 100%;
+    padding: 34px 0 0 0;
+}
+
+.info-all {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 25px;
+}
+
+.info-all div {
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.info-all>div>div {
+    width: 50%;
+}
+
+.info-all p {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.big-img {
+    margin: 0 0 0 25px;
+}
+
+.extra-info {
+    margin: 90px 0 0 0;
+    background-color: #3A9EFD;
+    border-radius: 50px;
+    position: relative;
+    padding: 109px 166px 109px 98px;
+}
+
+.extra-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 10;
+    transform: translate(0, -50%);
+}
+
+.extra-btns button {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 14px;
+    border: 0;
+}
+
+.extra-btns button.active .extra-btns button svg> {
+    color: #fff;
+}
+
+.active {
+    background-color: #FBBD08;
+}
+
+.extra-text p {
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    color: #fff;
+}
+
+.text-two,
+.text-three {
+    display: none;
+}
+
+.contact {
+    background-color: #FBBD08;
+    width: 100%;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-info div {
+    width: 100%;
+}
+
+.info-text {
+    display: flex;
+    align-items: end;
+}
+
+.info-text textarea {
+    padding: 22px 28px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 16px;
+    resize: none;
+    height: 157px;
+    width: 75%;
+    color: #fff;
+}
+
+.info-text textarea::placeholder {
+    color: #fff;
+}
+
+.info-text textarea:focus {
+    outline: none;
+}
+
+.info-text button {
+    background-color: #3A9EFD;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.contact-info textarea {
+    background-color: #FEC623;
+}
+
+.contact-map {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 0 35px;
+}
+
+.contact-map iframe {
+    border-radius: 16px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+
+.info-contact {
+    margin: 20px 0;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.phone-adress {
+    margin: 20px 0;
+
+}
+
+.phone-adress div {
+    display: flex;
+    align-items: center;
+}
+
+.phone-adress div a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.phone-adress div a:nth-child(2) {
+    margin-left: 7px;
+}
+
+.sosial-media a:nth-child(2) {
+    margin-left: 15px;
+}
+
+.open {
+    margin: 7px 0 0 0;
+}
+
+.open span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}

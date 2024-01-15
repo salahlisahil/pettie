@@ -3,7 +3,7 @@
 
   <h1 align="center">🐾Pettie - Animal Care🐾</h1>
 
-  Pettie is a kind of animal-caring website, <br /> Like human, animals also take care of us
+  Pettie is a kind of animal-therapy website, <br /> Like human, animals also take care of us
 
 <br>
 

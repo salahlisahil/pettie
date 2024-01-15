@@ -18,6 +18,8 @@
 ![Pettie2](https://github.com/salahlisahil/pettie/assets/136335346/d684eacf-4b0f-446f-92af-a9e6b95fe9bd)
 ![Pettie1](https://github.com/salahlisahil/pettie/assets/136335346/951b81d6-58f5-42e0-b960-fb9017950420)
 
+<br>
+
 ### ☑ Requisites
 
 Before you begin, ensure you have met the following requirements:

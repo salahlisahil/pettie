@@ -3,7 +3,7 @@
 
   <h1 align="center">🐾Pettie - Animal Care🐾</h1>
 
-  pettie is fully responsive nft website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+  Pettie is a kind of animal-caring website, <br /> Like human, animals also take care of us
 
 <br>
 
@@ -22,24 +22,24 @@
 
 Before you begin, ensure you have met the following requirements:
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+* [Git](https://git-scm.com/downloads "Download Git") and [Python](https://www.python.org/downloads/) must be installed on your operating system.
 
 <br>
 
 ### ☑ Run Locally
 
-To run **pettie** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/salahlisahil/pettie.git
+To run **pettie** locally, run following commands consecutively on your git bash:
 ```
-
-Windows:
-
-```bash
-git clone https://github.com/salahlisahil/pettie.git
+ python -m venv .
+```
+```
+.\Scripts\activate
+```
+```
+pip install django
+```
+```
+py manage.py runserver
 ```
 
 <br>
@@ -53,12 +53,8 @@ git clone https://github.com/salahlisahil/pettie.git
 ![html](https://img.shields.io/badge/html-yellow?logo=html5)
 ![css](https://img.shields.io/badge/css-blue?logo=css3)
 ![Javascript](https://img.shields.io/badge/JavaScript-darkgreen?logo=javascript)
-![flask](https://img.shields.io/badge/flask-blue?logo=flask)
-![docker](https://img.shields.io/badge/docker-yellow?logo=docker)
-![nginx](https://img.shields.io/badge/nginx-green?logo=nginx)
-![gunicorn](https://img.shields.io/badge/gunicorn-%20pink?logo=gunicorn)
-![postgresql](https://img.shields.io/badge/PostgreSQL-yellow?logo=postgresql)
-![sqlite](https://img.shields.io/badge/SQLite3-blue?logo=sqlite)
+![Django](https://img.shields.io/badge/django-blue?logo=django)
+
 
 </div>
 
@@ -79,7 +75,7 @@ This project is **free to use** and does not contain any license.
 
 ### ☑ Creators
 
-The project got prepared by collaborative actions of [Sahil](https://github.com/salahlisahil) , [Aleksey](https://github.com/alexop89056), and [Aisha](https://github.com/AysheUlukhan)
+The project got prepared by a consistent effort of [Sahil](https://github.com/salahlisahil)
 
 <br>
 

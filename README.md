@@ -7,7 +7,7 @@
 
 <br>
 
-  <a href="https://salahlisahil.github.io/pettie/"><strong> 📺 Live</strong></a> 
+  <a href="https://www.behance.net/gallery/183287761/Pettie-Case-Study-Webdesign"><strong> 📺 Live</strong></a> 
 
 </div>
 
